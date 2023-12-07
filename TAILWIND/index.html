@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+        <title>NATO - Homepage</title>
+        <link href="images/logo.png" rel="shortcut icon">
+
+
+        <style>
+            .image-container {
+                position: relative;
+            }
+
+            .text-overlay {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff; 
+                padding-bottom: 43px;
+            }
+            .text-overlay:hover{
+                margin-top: -110px;
+                
+            }
+            .text-overlay:hover .hidden{
+                top: 80%;
+                padding-bottom: 130px;
+                padding-top: 10px;
+                display: block;
+                
+            }
+            .nav-link{
+                transition: all 0.2s;
+            }
+            .nav-link:hover {
+                border-bottom: 4px solid #0b89c6;
+            }
+            .hidden{
+                display: none;
+                
+            }
+            table,td{
+                border: 1px solid gray;
+                background-color: black;
+                border-top: 0px;
+            }
+            table,td:hover{
+                background-color:#0b89c6;
+
+            }
+            a{
+                text-decoration: none;
+               
+            }
+            .allnew{
+                color: #0b89c6;
+
+                text-align: right;
+
+            }
+            .utama:hover{
+                color: #0b89c6;
+
+            }
+            .allnew:hover{
+                color: #fff;
+            }
+            
+        </style>
+
+
+    </head>
+    <body>
+        <!--NAVBAR 1-->
+        <div class="container">
+            <div class="row d-flex flex-row">
+                <div class="p-2 col-sm-8">
+                    <img style="max-width: 100%;" src="images/head.png">
+                </div>
+                <div class="p-2 col-sm-3">
+                    <a href="https://www.nato.int/cps/en/natohq/e-mail_distribution.htm"><button type=" button" class="btn btn-sm btn-light bi bi-envelope-fill" > GET THE LATTEST UPDATE <i class="bg-secondary bi bi-chevron-right" style="color: white; "></i></button></a>
+                </div>
+                <div class="p-2 col-sm-1">
+                    <select class=" form-select form-select-sm" id="sel1" name="sellist1">
+                        <option>English</option>
+                        <option>Français</option>
+                        <option>Pyccкий</option>
+                        <option>YkpaïHcbka</option>
+                      </select>
+                </div>
+              </div>
+            </div>    
+        </div>
+
+        <!--NABAR TOGGLER-->
+        <div class="container" >
+        <nav class="navbar navbar-expand-lg " style="margin-left: -20px;">
+            <div class="container-fluid ">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class=" mt-5 collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active fs-5 border-end border-2" style="height: 1em; line-height: 0; margin-top: 15px;" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5 px-3 border-end border-2"  style="height: 1em; line-height: 0; margin-top: 15px;" href="biodata.html">Biodata</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link fs-5 px-3 border-end border-2"  style="height: 1em; line-height: 0; margin-top: 15px;" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5 px-3 " href="gamelist.html"  style="height: 1em; line-height: 0; margin-top: 15px;">My Best List Game</a>
+                  </li>
+                </ul>
+                <div class="col-md-4">
+                    <form class="d-flex input-group" role="search">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <input class="form-control me-2 " type="search" placeholder="" aria-label="Search">                 
+                    </form>
+                </div>
+              </div>
+            </div>
+          </nav>  
+        </div>
+        
+        <!--MAIN CONTENT-->
+        <div class="container-fluid bg-black">
+            <div class="container text-white pt-3">
+                <h5><strong>LATEST NEW</strong></h5>
+                    <div class="d-flex">
+                        <div class="col-sm-6">
+                            <div class="image-container">
+                                <a href="https://www.nato.int/cps/en/natohq/news_221015.htm"><img src="images/main.jpg" style="max-width: 100%;"></a>
+
+                                    <div class="container-fluid text-overlay bg-black bg-opacity-75">
+                                        <p class="text-primary">4 Dec.2023</p>
+                                        <a href="https://www.nato.int/cps/en/natohq/news_221015.htm" style="color: white;"><h4 class="utama">Secretary General and Ukrainian Defence Minister discuss battlefield situation, NATO support</h4></a> 
+                                        <p class="hidden">NATO Secretary General Jens Stoltenberg underlined the Alliance’s unwavering support to Ukraine during a meeting with Ukrainian Defence Minister Rustem Umerov in Brussels on Monday (4 December 2023).</p>
+                                    </div>
+
+                            </div>    
+                        </div>
+                        <div class="col-sm-2 container" >
+
+                            <figure class="figure">
+                                <a href="https://www.nato.int/cps/en/natohq/news_220668.htm"><img src="images/submain1.jpg" style="max-width: 100%;"></a>
+                                <a href="https://www.nato.int/cps/en/natohq/news_220668.htm"><figcaption class="figure-caption text-white">Secretary General at COP28: climate change matters for our security, and therefore it matters to NATO</figcaption></a>
+                            </figure>
+
+                            <figure class="figure">
+                                <a href="https://www.nato.int/cps/en/natohq/news_220993.htm"> <img src="images/submain2.jpg" style="max-width: 100%;"></a>
+                                <a href="https://www.nato.int/cps/en/natohq/news_220993.htm"><figcaption class="figure-caption text-white">NATO’s flagship cyber exercise concludes in Estonia</figcaption></a>
+                            </figure>                            
+                        </div>
+                        <div class="col-sm-4">
+                            <table>
+                               <tr>
+                                <td class="p-3 px-4  text-white"><a href="https://www.nato.int/cps/en/natohq/news_220659.htm" style="color: white;">Secretary General wraps up meeting of Foreign Ministers: “Ukraine is closer to NATO than ever before”</a></td>
+                                </tr></a>
+                                <tr>
+                                    <td  class="p-3 px-4  text-white"><a href="https://www.nato.int/cps/en/natohq/news_220659.htm" style="color: white;">NATO DIANA announces first cohort of innovators, launches call for mentors</a></td>
+                                </tr>
+                                <tr>
+                                    <td  class="p-3 px-4  text-white"><a href="https://www.nato.int/cps/en/natohq/news_220659.htm" style="color: white;">NATO Launches Call for Public Diplomacy Grant Projects in 2024</a></td>
+                                </tr>
+                                <tr>
+                                    <td  class="p-3 px-4  text-white"><a href="https://www.nato.int/cps/en/natohq/news_220659.htm" style="color: white;">Statement by the NATO-Ukraine Council at the level of Foreign Ministers</a></td>
+                                </tr>
+
+                                <div>
+                                <tr>
+                                    <td  class="allnew p-3 px-4 text-white text-primary"><a href="https://www.nato.int/cps/en/natohq/news_220659.htm">ALL NEWS >></a></td>
+                                </tr>
+                                
+                            </table>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FEATURED-->
+         <div class="container-fluid bg-secondary bg-opacity-25">
+            <div class="container img-fluid ">
+              
+                
+                <nav class="navbar navbar-expand-lg navbar-light  border-bottom border-2 border-secondary-subtle mx-5" style="height: 3.3em;">
+                    <a class="navbar-brand mt-4 border-bottom border-primary border-3" style="height: 1.5em;" href="#"><strong>Featured</strong></a>
+                  </nav>
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner text-black">
+                      <div class="carousel-item active mt-5" style="margin-left: 40%; margin-right: 40%;">
+                        <a href="Protecting Allied critical undersea infrastructure">
+                        <figure>
+                        <img src="images/Carousel/Carousel1.jpg" class="d-block " alt="Image 1">
+                        <figcaption class="text-black"><i class="bi bi-camera-video-fill" style="color: black;"></i> Protecting Allied critical undersea infrastructure</figcaption>
+                        </figure></a>
+                      </div>
+                      <div class="carousel-item mt-5" style="margin-left: 40%; margin-right: 40%;">
+                        <a href="https://www.nato.int/cps/en/natohq/news_220955.htm">
+                        <figure>
+                        <img src="images/Carousel/Carousel2.jpg" class="d-block " alt="Image 2">
+                        <figcaption class="text-black">Ice Ice Navy – Patrolling Greenland on Denmark’s HDMS Triton</figcaption>
+                        </figure></a>
+                      </div>
+                      <a href="https://www.nato.int/cps/en/natohq/photos_220706.htm">
+                      <div class="carousel-item mt-5" style="margin-left: 40%; margin-right: 40%;">
+                        <figure>
+                        <img src="images/Carousel/Carousel3.jpg" class="d-block " alt="Image 3">
+                        <figcaption class="text-black"><i class="bi bi-camera-fill" style="color: black;"></i> NATO multinational battlegroup Hungary on the move</figcaption>
+                        </figure></a>
+                      </div>
+                      <div class="carousel-item mt-5" style="margin-left: 40%; margin-right: 40%;">
+                        <a href="https://www.nato.int/cps/en/natohq/news_220573.htm">
+                        <figure>
+                        <img src="images/Carousel/Carousel4.jpg" class="d-block " alt="Image 3">
+                        <figcaption class="text-black">With an ace up its sleeve – the US Army designs a deck<br> of cards to help tell friends from foes</figcaption>
+                        </figure></a>
+                      </div>
+                      <div class="carousel-item mt-5" style="margin-left: 40%; margin-right: 40%;">
+                        <a href="https://www.nato.int/cps/en/natohq/photos_221046.htm">
+                        <figure>
+                        <img src="images/Carousel/Carousel7.jpg" class="d-block " alt="Image 3">
+                        <figcaption class="text-black"><i class="bi bi-camera-fill" style="color: black;"></i> NATO’s multinational battlegroup in Lithuania gets <br>dirty for Czech obstacle course</figcaption>
+                        </figure></a>
+                      </div>
+                      <div class="carousel-item mt-5" style="margin-left: 40%; margin-right: 40%;">
+                        <a href="https://www.nato.int/cps/en/natohq/events_220250.htm">
+                        <figure>
+                        <img src="images/Carousel/Carousel12.jpg" class="d-block " alt="Image 3">
+                        <figcaption class="text-black">Meeting of NATO Ministers of Foreign Affairs</figcaption>
+                        </figure></a>
+                      </div>
+                    </div>
+                    
+                    <!-- Navigation buttons -->
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon bg-black" aria-hidden="true" style="height: 150px;"></span>
+                      <span class="sr-only text-bg-dark"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon bg-black" aria-hidden="true" style="height: 150px;"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </div>
+                  
+                  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            </div>
+        </div> 
+
+
+</body>
+</html>
