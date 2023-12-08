@@ -2,44 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Biodata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbs5fQgE4m5Jj2uKH8tMLU5x9EKJr4amHh8uJi4MWDmI/ii6wIYUiyI4ARsXN2H2" crossorigin="anonymous">
 
-  <!-- Tautan ke Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4e4L4rN3Z5qkiC+6R5vqBDX0qmeunSmN" crossorigin="anonymous">
+    <style>
+        body {
+  background-color: #f8f9fa;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #007bff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+    </style>
 </head>
 <body>
 
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-6 offset-md-3">
-        <div class="card">
-          <div class="card-header bg-primary text-white">
-            <h2>Biodata</h2>
+        <form>
+          <h2 class="mb-4">Contact Us</h2>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name:</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
           </div>
-          <div class="card-body">
-            <div class="form-group">
-              <label for="nama">Nama:</label>
-              <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
-            </div>
-            <div class="form-group">
-              <label for="umur">Umur:</label>
-              <input type="number" class="form-control" id="umur" placeholder="Masukkan umur Anda">
-            </div>
-            <div class="form-group">
-              <label for="alamat">Alamat:</label>
-              <textarea class="form-control" id="alamat" rows="3" placeholder="Masukkan alamat Anda"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Simpan</button>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your e-mail address">
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Gender:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+              <label class="form-check-label" for="female">Female</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="religion" class="form-label">Religion:</label>
+            <select class="form-select" id="religion">
+              <option value="islam">Islam</option>
+              <option value="christian">Christian</option>
+              <option value="hindu">Hindu</option>
+              <option value="buddhist">Buddhist</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Address:</label>
+            <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Hobbies:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="reading" id="reading">
+              <label class="form-check-label" for="reading">Reading</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="traveling" id="traveling">
+              <label class="form-check-label" for="traveling">Traveling</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="gaming" id="gaming">
+              <label class="form-check-label" for="gaming">Gaming</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
       </div>
     </div>
   </div>
 
-  <!-- Tautan ke Bootstrap JavaScript dan Popper.js (diperlukan untuk beberapa fitur Bootstrap) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-X48EVOxHrFZtxSI0RQp8Ly9PLFuGHC2RM3HFP4pHA6Y6Skj0Uc8BIlJo3I68wv0P" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4e4L4rN3Z5qkiC+6R5vqBDX0qmeunSmN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofTW5k8l5oUEI5LkUJ0EzzoJKDAe5VDDQ" crossorigin="anonymous"></script>
 </body>
 </html>

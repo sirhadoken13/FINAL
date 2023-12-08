@@ -11,3 +11,7 @@ function topFunction() {
       document.getElementById("backToTopBtn").style.display = "none";
     }
   };
+
+function klik(){
+  alert("Sorry we have an Error :(, Try again later");
+}
