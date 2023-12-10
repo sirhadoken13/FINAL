@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <!--NAVBAR 1-->
+         <div class="container">
+            <div class="row d-flex flex-row">
+                <div class="p-2 col-sm-8">
+                    <a href="index.html">
+                      <img style="max-width: 100%;" src="images/head.png">
+                    </a>
+                </div>
+                <div class="p-2 col-sm-3">
+                    <a href="https://www.nato.int/cps/en/natohq/e-mail_distribution.htm"><button type=" button" class="btn btn-sm btn-light bi bi-envelope-fill" > GET THE LATTEST UPDATE <i class="bg-secondary bi bi-chevron-right" style="color: white; "></i></button></a>
+                </div>
+                <div class="p-2 col-sm-1">
+                    <select class=" form-select form-select-sm" id="sel1" name="sellist1">
+                        <option>English</option>
+                        <option>Français</option>
+                        <option>Pyccкий</option>
+                        <option>YkpaïHcbka</option>
+                      </select>
+                </div>
+              </div>
+            </div>    
+        </div>
+
+        <!--NABAR TOGGLER-->
+        <div class="container" >
+        <nav class="navbar navbar-expand-lg " style="margin-left: -20px;">
+            <div class="container-fluid ">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class=" mt-5 collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active fs-5 border-end border-2" style="height: 1em; line-height: 0; margin-top: 15px;" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5 px-3 border-end border-2"  style="height: 1em; line-height: 0; margin-top: 15px;" href="biodata.html">Biodata</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link fs-5 px-3 border-end border-2"  style="height: 1em; line-height: 0; margin-top: 15px;" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5 px-3 " href="gamelist.html"  style="height: 1em; line-height: 0; margin-top: 15px;">My Best List Game</a>
+                  </li>
+                </ul>
+                <div class="col-md-4">
+                    <form class="d-flex input-group" role="search">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <input class="form-control me-2 " type="search" placeholder="" aria-label="Search">                 
+                    </form>
+                </div>
+              </div>
+            </div>
+          </nav>  
+        </div>
+    </body>
+
+<!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="d-flex">
+        <div class="col-sm-6">  
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="exampleInput" class="form-label"><i class="bi bi-person"></i></i>Full Name :</label>
+                <input type="text" class="form-control" id="exampleInput" placeholder="Enter text">
+              </div>
+            </div>
+          </div>
+        
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="exampleInputEmail" class="form-label"><i class="bi bi-envelope"></i>Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+              </div>
+            </div>
+          </div>
+        
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="exampleInput" class="form-label"><i class="bi bi-file-person"></i>Username :</label>
+                <input type="text" class="form-control" id="exampleInput" placeholder="Enter text">
+              </div>
+            </div>
+          </div>
+        
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="exampleInputPassword" class="form-label"><i class="bi bi-incognito"></i>Password :</label>
+                <input type="password" class="form-control" id="exampleInputPassword" placeholder="Enter password">
+              </div>
+            </div>
+          </div>
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary" onclick="klik()">Submit</button>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+        
+
+        <div class="col-sm-6">  
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <label class="form-label"><i class="bi bi-gender-ambiguous"></i>Gender:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="religion" class="form-label">Religion:</label>
+                <select class="form-select" id="religion">
+                  <option value="islam">Islam</option>
+                  <option value="christian">Christian</option>
+                  <option value="hindu">Hindu</option>
+                  <option value="buddhist">Buddhist</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="address" class="form-label"><i class="bi bi-house"></i>Address:</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+              </div>
+            </div>
+          </div>
+        
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <label class="form-label"><i class="bi bi-star"></i>Hobbies:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="reading" id="reading">
+                  <label class="form-check-label" for="reading">Reading</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="traveling" id="traveling">
+                  <label class="form-check-label" for="traveling">Traveling</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="gaming" id="gaming">
+                  <label class="form-check-label" for="gaming">Gaming</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+  </div>
+
+
+    <footer>
+    <div class="container-fluid bg-black">
+        <div class="container d-flex pt-5 " style="color: #ccccccff;">
+       
+        <div class="col-sm-2">
+          <h6>ABOUT US</h6><br>
+            <div>
+              <p><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">What is NATO?</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Founding Treaty</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO member countries</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Partners</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Structure</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki"> Who's who?</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Secretary General</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO Hostory</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO on the Map</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Strategic Concepts</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Funding NATO</a></p>
+            </div>
+        </div>
+        <div class="col-sm-2 ms-5">
+          <h6>WHAT WE DO</h6><br>
+            <div>
+              <p><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Encyclopedia of NATO Topics</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Collective defence and Article 5</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Deterrence and defence</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO-Russia: setting the record straight</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO-Ukraine relations</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Execises</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Cyber defence</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Encirontment, climate change and security</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Women, Peace and Security</a></p>
+            </div>
+        </div>
+        <div class="col-sm-2 ms-5">
+          <h6>NEWSROOM</h6><br>
+            <div>
+              <p><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">News</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Media advisories</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Press Office conrtacts</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Media accreditation</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Speeches & transcripts</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Factsheets</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Photos</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Video</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Audio</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Event programmes</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Use of content</a></p>
+            </div>
+        </div>
+        <div class="col-sm-2 ms-5">
+          <h6>WORK WITH US</h6><br>
+            <div>
+              <p><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Careers at NATO</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Young Proffesionals Programme</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Intership Programme</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Business opportunities</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Nato CO-Sponsorship grants</a></p>
+            </div>
+        </div>
+        <div class="col-sm-2 ms-5">
+          <h6>LEARN MORE</h6><br>
+            <div>
+              <p><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Basic texts</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO at a glance</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO terminology</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Standardization Aggrements</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO Archives</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Newsroom archives (pew 2008)</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO Library</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NATO Research Guides</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">NSecretary General's Annual Report</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Brand Identity Manual</a></p>
+              <p style="margin-top: -10px;"><a href="https://www.nato.int/nato-welcome/index.html"  id="kaki">Follow us</a></p>
+            </div>
+          </div>
+      
+         
+      </div> 
+      <div class="icon text-center fs-3 text-white  border-top border-1">
+        <a href="https://www.facebook.com/natha.naellubis.3?mibextid=ZbWKwL"><i class="bi bi-facebook border-start border-1 ps-5 "  id="end"></i></a>
+        <a href="https://twitter.com/godstaff13?t=-ZNm5aYibUY1KzVL-e3Q3Q&s=09"><i class="bi bi-twitter-x ms-5 border-start border-1 ps-5" id="end"></i></a>
+        <a href="https://youtube.com/@nathanaell2935?si=uDNT8NlomcEG_QgZ"><i class="bi bi-youtube ms-5 border-start border-1 ps-5" id="end"></i></a> 
+        <a href="https://instagram.com/nael.lub?igshid=MmVlMjlkMTBhMg=="><i class="bi bi-instagram ms-5 border-start border-1 ps-5" id="end"></i></a> 
+        <a href="https://www.threads.net/@nael.lub"><i class="bi bi-threads ms-5 border-start border-1 ps-5 border-end border-1 pe-5" id="end"></i></a>
+      </div>
+      
+      </div>
+      <img src="images/bg.png" id="bg"> 
+      
+      </footer>
+</html>

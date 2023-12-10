@@ -1,12 +1,18 @@
-// add class navbarDark on navbar scroll
-const header = document.querySelector('.navbar');
+function topFunction() {
+    document.body.scrollTop = 0; // Untuk Safari
+    document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+  }
 
-window.onscroll = function() {
-    var top = window.scrollY;
-    if(top >=100) {
-        header.classList.add('navbarDark');
+  // Menunjukkan atau menyembunyikan tombol berdasarkan posisi scroll
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("backToTopBtn").style.display = "block";
+    } else {
+      document.getElementById("backToTopBtn").style.display = "none";
     }
-    else {
-        header.classList.remove('navbarDark');
-    }
+  };
+
+function klik(){
+  alert("Sorry we have an Error :(, Try again later");
 }
+

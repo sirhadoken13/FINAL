@@ -1,54 +1,59 @@
-/* hero background image */
-.bgimage {
-    height:100vh;
-    background: url('gambar/back.jpeg');
-    background-size:cover;
-    position:relative;
+.image-container {
+    position: relative;
 }
-/* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
-.hero_desc {
-    font-size: 2rem;
-}
-.hero-text {
-    text-align: center;
+
+.text-overlay {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #fff; 
+    padding-bottom: 43px;
 }
-.imageAboutPage {
-    width: 100%;
+.text-overlay:hover{
+    margin-top: -110px;
+    
 }
-/* services section css */
-.servicesText.card {
-    height: 280px;
-    cursor: pointer;
-  }
-.servicesIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
+.text-overlay:hover .hidden{
+    top: 80%;
+    padding-bottom: 130px;
+    padding-top: 10px;
+    display: block;
+    
 }
-.card-title {
-    text-align: center;
+.nav-link{
+    transition: all 0.2s;
 }
-.card:hover .servicesIcon {
-    color: #008000;
+.nav-link:hover {
+    border-bottom: 4px solid #0b89c6;
 }
-.servicesText:hover {
-    border: 1px solid #008000;
+.hidden{
+    display: none;
+    
 }
-/* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: black;
-}
-#demo{
-    width: 25%;
-    height: auto;
-    margin-left: 37%;
-    margin-right: 37%;
-}
+table,td{border: 1px solid gray;background-color: black;border-top: 0px;}table,td:hover{background-color:#0b89c6;}a{text-decoration: none;}
+.allnew{color: #0b89c6;text-align: right;}.utama:hover{color: #0b89c6;}.allnew:hover{color: #fff;}h4{text-align: center; margin-left: 50px;}#nato{ margin-top: 150px;} .utama{text-align: start;}
+#sekretaris:hover{ color: black; } #sekretaris:active{color: black;} #meja{ margin-left: 137px;} #td1{font-size: 12px;} #recent:hover,#upcoming:hover{ border-bottom: 4px solid #0b89c6; transition: all 0.2s;}
+#recent,#upcoming{cursor: pointer;} #focus{height: 170px; width: auto; }  
+.tanggal{
+  color: black;
+}.tanggal:hover{color: blue;}#fokus{ color: black;} #fokus:hover{color: blue;}.top{text-align: right;
+color: rgb(219, 219, 219);}.top:hover{
+  cursor: pointer;
+}#subrek:hover{
+  background-color: #919191;
+}#subrek{
+  background-color: rgb(158, 158, 158);
+}   #email{background-color: #23a0df;}#kaki:hover{text-decoration: underline;}#kaki{color: #ccccccff; font-size: 14px;}
+#bg{
+  height: 400px;
+  width: auto;
+  opacity: 0.3;
+  display: flex;
+  position: absolute;
+  margin-top: -505px;
+  margin-left: 35%;
+}#end{color: white;}#end:hover{color: #0b89c6;}
+
+
+
